@@ -1,0 +1,18 @@
+site_name: 'Guia de Desenvolvimento de Projetos  AI LAB - Cognitivo.ai'
+site_description: 'Sustentação de Engenharia'
+site_author: 'Cognitivo.ai'
+theme:
+  name: 'material'
+  logo: 'image/icon.png'
+  palette:
+    primary: 'white'
+  favicon: 'image/icon_cog.png'
+
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: 'index.md'
+
+extra:
+  footer: '© 2024 Cognitivo.ai. All rights reserved.'
