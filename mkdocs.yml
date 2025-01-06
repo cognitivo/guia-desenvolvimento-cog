@@ -17,11 +17,10 @@ theme:
 nav:
   - Home: "index.md"
   - Geral:
-    - Padrão de Código: "global/code.md"
-    - Versionamento de código: "global/git.md"
-    - README's: "global/readmes.md"
-    - ocumentações: "global/documentation.md"
-    - Repositórios: "global/repositories.md"
+    - Vamos ao Código 👨🏼‍💻: "global/code.md"
+    - O git 😁: "global/git.md"
+    - Documentações 📝: "global/documentation.md"
+    - Repositórios 📂: "global/repositories.md"
 
   - Data Science:
     - Start: "data_science/start.md"
