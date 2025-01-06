@@ -1,18 +1,42 @@
-site_name: 'Guia de Desenvolvimento de Projetos  AI LAB - Cognitivo.ai'
-site_description: 'Sustentação de Engenharia'
-site_author: 'Cognitivo.ai'
+site_name: "Guia de Desenvolvimento - Cognitivo.ai"
+site_description: "Documento criado para guiar o Desenvolvimento de projetos, especialmente na etapa de programação, na Cognitivo.ai"
+site_author: "Cognitivo.ai"
+copyright: "© 2025 Cognitivo.ai. All rights reserved."
 theme:
-  name: 'material'
-  logo: 'image/icon.png'
+  name: "material"
+  logo: "image/logo_cog.png"
   palette:
-    primary: 'white'
-  favicon: 'image/icon_cog.png'
+    primary: "white"
+  favicon: "image/icon.png"
 
   features:
     - navigation.tabs
 
+  locale: pt_br
+
 nav:
-  - Home: 'index.md'
+  - Home: "index.md"
+  - Geral:
+    - Padrão de Código: "global/code.md"
+    - Versionamento de código: "global/git.md"
+    - README's: "global/readmes.md"
+    - ocumentações: "global/documentation.md"
+    - Repositórios: "global/repositories.md"
+
+  - Data Science:
+    - Start: "data_science/start.md"
+
+  - Engenharia de Dados:
+    - Start: "data_eng/start.md"
+
+  - Analytics:
+    - Start: "analytics/start.md"
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
 
 extra:
-  footer: '© 2024 Cognitivo.ai. All rights reserved.'
+  footer: "© 2025 Cognitivo.ai. All rights reserved."
