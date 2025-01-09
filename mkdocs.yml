@@ -8,7 +8,9 @@ theme:
   palette:
     primary: "white"
   favicon: "image/icon.png"
-
+  font:
+    text: "Space Grotesk"
+    code: "Roboto Mono"
   features:
     - navigation.tabs
 
