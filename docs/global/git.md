@@ -207,6 +207,17 @@ Com o feedback aplicado e o "ok" do revisor, seu trabalho se junta ao dos outros
 
 Este é o grande momento, gerenciado pelo Tech Lead. Quando um conjunto de funcionalidades na `develop` está sólido e validado, ele é promovido para a `main`. É como inaugurar o prédio. O código agora está em produção, servindo aos nossos clientes.
 
+### ✅ Checklist Diário
+
+Lembre-se sempre do checklist cotidiano:
+
+!!! note "Checklist Diário"
+    - [ ] 📅 **Always sync:** `git pull origin develop`
+    - [ ] 🌱 **Branch naming:** `feature/` ou `fix/` + nome descritivo  
+    - [ ] 📝 **Commit format:** `tipo(escopo): descrição`
+    - [ ] 🔄 **PR template:** Preenchido completamente
+    - [ ] 👤 **ClickUp link:** Conectado no PR
+
 
 ## **Boas Práticas: O Jeito Cognitivo de Usar Git**
 
