@@ -24,7 +24,7 @@
     
     
       
-        <title>O git 😁 - Guia de Desenvolvimento - Cognitivo.ai</title>
+        <title>O git 🌳 - Guia de Desenvolvimento - Cognitivo.ai</title>
       
     
     
@@ -45,8 +45,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Space Grotesk";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              O git 😁
+              O git 🌳
             
           </span>
         </div>
@@ -398,7 +398,7 @@
           
   
   <span class="md-ellipsis">
-    O git 😁
+    O git 🌳
   </span>
   
 
@@ -409,7 +409,7 @@
         
   
   <span class="md-ellipsis">
-    O git 😁
+    O git 🌳
   </span>
   
 
@@ -431,13 +431,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#padronizacao-de-commits" class="md-nav__link">
+  <a href="#por-que-o-git-existe" class="md-nav__link">
     <span class="md-ellipsis">
-      Padronização de Commits
+      Por que o Git existe?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Padronização de Commits">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#padronizacao-de-commits-commits-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padronização de Commits (Commits Semânticos)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Padronização de Commits (Commits Semânticos)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -461,67 +470,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#merges-e-pull-requests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Merges e Pull Requests
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reviews" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reviews
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boas-praticas-com-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boas Práticas com Git
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Boas Práticas com Git">
+    <nav class="md-nav" aria-label="Trabalhando com Branches">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-commits-frequentes-e-pequenos" class="md-nav__link">
+  <a href="#nomenclatura-padrao" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Commits Frequentes e Pequenos
+      Nomenclatura Padrão
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-evite-commits-ambiguos" class="md-nav__link">
+  <a href="#papel-das-branchs-principais" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Evite Commits Ambíguos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-resolvendo-conflitos" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Resolvendo Conflitos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-automatizacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Automatização
+      Papel das Branchs principais
     </span>
   </a>
   
@@ -533,9 +497,90 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-uteis-do-git" class="md-nav__link">
+  <a href="#pull-requests-prs-e-revisao-de-codigo" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos Úteis do Git
+      Pull Requests (PRs) e Revisão de Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull Requests (PRs) e Revisão de Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#os-prs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Os PRs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Os PRs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparando-o-pr-o-titulo-e-o-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparando o PR: o título e o template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reviews
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitflow-da-cognitivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitFlow da Cognitivo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitFlow da Cognitivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checklist-diario" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Checklist Diário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas-o-jeito-cognitivo-de-usar-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas: O Jeito Cognitivo de Usar Git
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia-rapida-comandos-essenciais-do-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referência Rápida: Comandos Essenciais do Git
     </span>
   </a>
   
@@ -824,13 +869,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#padronizacao-de-commits" class="md-nav__link">
+  <a href="#por-que-o-git-existe" class="md-nav__link">
     <span class="md-ellipsis">
-      Padronização de Commits
+      Por que o Git existe?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Padronização de Commits">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#padronizacao-de-commits-commits-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padronização de Commits (Commits Semânticos)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Padronização de Commits (Commits Semânticos)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -854,67 +908,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#merges-e-pull-requests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Merges e Pull Requests
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reviews" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reviews
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boas-praticas-com-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boas Práticas com Git
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Boas Práticas com Git">
+    <nav class="md-nav" aria-label="Trabalhando com Branches">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-commits-frequentes-e-pequenos" class="md-nav__link">
+  <a href="#nomenclatura-padrao" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Commits Frequentes e Pequenos
+      Nomenclatura Padrão
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-evite-commits-ambiguos" class="md-nav__link">
+  <a href="#papel-das-branchs-principais" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Evite Commits Ambíguos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-resolvendo-conflitos" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Resolvendo Conflitos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-automatizacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Automatização
+      Papel das Branchs principais
     </span>
   </a>
   
@@ -926,9 +935,90 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-uteis-do-git" class="md-nav__link">
+  <a href="#pull-requests-prs-e-revisao-de-codigo" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos Úteis do Git
+      Pull Requests (PRs) e Revisão de Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull Requests (PRs) e Revisão de Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#os-prs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Os PRs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Os PRs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparando-o-pr-o-titulo-e-o-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparando o PR: o título e o template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reviews
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitflow-da-cognitivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitFlow da Cognitivo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitFlow da Cognitivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checklist-diario" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Checklist Diário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas-o-jeito-cognitivo-de-usar-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas: O Jeito Cognitivo de Usar Git
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia-rapida-comandos-essenciais-do-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referência Rápida: Comandos Essenciais do Git
     </span>
   </a>
   
@@ -949,57 +1039,42 @@
                   
 
 
-<h1 id="o-git">O git 😁<a class="headerlink" href="#o-git" title="Permanent link">&para;</a></h1>
-<ul>
-<li><strong>Por que usar Git?</strong></li>
-</ul>
-<p>O Git é uma ferramenta essencial para o desenvolvimento de software moderno, oferecendo controle de versão distribuído. Ele permite que equipes colaborem de forma eficiente, mantendo o histórico das alterações e garantindo que o código esteja sempre organizado. Algumas vantagens principais incluem:</p>
-<ul>
-<li>
-<p><strong>Histórico de Alterações:</strong> Permite rastrear todas as mudanças feitas no código ao longo do tempo.</p>
-</li>
-<li>
-<p><strong>Colaboração:</strong> Suporta trabalho em equipe com branchs e merges, permitindo que múltiplos desenvolvedores trabalhem simultaneamente.</p>
-</li>
-<li>
-<p><strong>Segurança:</strong> O armazenamento distribuído garante que os dados estejam sempre seguros.</p>
-</li>
-<li>
-<p><strong>Flexibilidade:</strong> Adapta-se a diferentes fluxos de trabalho e tamanhos de equipe.</p>
-</li>
-</ul>
-<h2 id="padronizacao-de-commits">Padronização de Commits<a class="headerlink" href="#padronizacao-de-commits" title="Permanent link">&para;</a></h2>
-<p>A padronização dos commits tem como objetivo trazer um histórico mais detalhado para o projeto, onde podemos ver “de cara” as mudanças que foram implementadas com aquele commit e atualizações do repositório. Um commit deve ser feito sempre que fazemos alguma alteração no código, como uma feature, fix, docs e etc. A granularidade dos commits podem variar, dessa forma, devemos sempre fazer o commit quando terminamos de fazer determinada tarefa, como corrigir um bug, implementar uma feature, criar a documentação, ajustar o estilo do código, etc. E, para facilitar o entendimento do que cada commit representa, devemos seguir o padrão de commits semânticos, para garantir que conseguimos entender diretamente o que foi feito.</p>
-<p>Para isso, podemos seguir o seguinte padrão:</p>
+<h1 id="o-git">O git 🌳<a class="headerlink" href="#o-git" title="Permanent link">&para;</a></h1>
+<h2 id="por-que-o-git-existe"><strong>Por que o Git existe?</strong><a class="headerlink" href="#por-que-o-git-existe" title="Permanent link">&para;</a></h2>
+<p>O Git é uma ferramenta essencial para o nosso trabalho. Este documento institucionaliza as boas práticas e o processo que <strong>deve ser seguido em todos os projetos</strong> da Cognitivo.</p>
+<p>Nosso objetivo é garantir que o código seja padronizado, que tenhamos um histórico claro das alterações e que a nossa operação seja eficaz e previsível, eliminando riscos como a perda de código. Ter um processo bem definido nos permite, acima de tudo, cobrar a sua utilização e manter um alto padrão de qualidade.</p>
+<h2 id="padronizacao-de-commits-commits-semanticos"><strong>Padronização de Commits (Commits Semânticos)</strong><a class="headerlink" href="#padronizacao-de-commits-commits-semanticos" title="Permanent link">&para;</a></h2>
+<p>A padronização dos commits é obrigatória e tem como objetivo trazer um histórico claro e rastreável para o projeto. Um commit deve representar <strong>uma unidade lógica de trabalho</strong>, ou seja, uma etapa de uma tarefa completa que pode ser entendida de forma isolada.</p>
+<p>Para isso, seguimos o padrão de commits semânticos:</p>
 <div class="codehilite"><pre><span></span><code>&lt;tipo&gt;(escopo opcional): &lt;descrição&gt;
 </code></pre></div>
 
 <p>Onde cada estrutura tem uma função específica:</p>
 <ul>
 <li>
-<p><strong>type:</strong> indica o tipo do commit. Podemos ter alguns tipos, que podem variar, mas ambos devem seguir o mesmo padrão e devem ser sucintos ao indicar o tipo do commit. Alguns exemplos são:</p>
+<p><strong>type:</strong> indica o tipo da alteração realizada no commit. Os tipos que utilizamos são:</p>
 <ul>
-<li><strong>feat:</strong> identifica um novo recurso</li>
-<li><strong>fix:</strong> correção de um bug</li>
-<li><strong>chore:</strong> alterações que não estão relacionadas a uma correção ou recurso e não modificam arquivos src ou de teste (por exemplo, atualização de dependências)</li>
-<li><strong>refactor:</strong> código refatorado que não corrige um bug nem adiciona um recurso</li>
-<li><strong>docs:</strong> atualizações na documentação, como o README ou outros arquivos markdown</li>
-<li><strong>style:</strong> alterações que não afetam o significado do código, provavelmente relacionadas à formatação do código, como espaço em branco, falta de ponto e vírgula e assim por diante.</li>
-<li><strong>test:</strong> incluindo testes novos ou corrigindo testes anteriores</li>
-<li><strong>perf:</strong> melhoria na performance do código</li>
-<li><strong>ci:</strong> integração contínua relacionada</li>
-<li><strong>build:</strong> mudanças que afetam o sistema de compilação ou dependências externas</li>
-<li><strong>revert:</strong> reverte um commit anterior</li>
+<li><strong>feat:</strong> Uma nova funcionalidade (feature).</li>
+<li><strong>fix:</strong> Uma correção de um bug (bug fix).</li>
+<li><strong>docs:</strong> Alterações na documentação.</li>
+<li><strong>style:</strong> Formatação de código que não altera a lógica (espaços, ponto e vírgula, etc.).</li>
+<li><strong>refactor:</strong> Refatoração de código que não corrige um bug nem adiciona uma funcionalidade, somente melhora a legibilidade ou a estrutura do código.</li>
+<li><strong>test:</strong> Adição ou correção de testes.</li>
+<li><strong>chore:</strong> Outras alterações que não modificam o código-fonte ou testes (ex: atualização de dependências).</li>
 </ul>
 </li>
 <li>
-<p><strong>scope:</strong> Escopo onde foi feito o commit, ou seja, onde foi feita a alteração. Pode ser um componente, uma página, um módulo, etc. Esse campo é opcional, mas é interessante para facilitar a busca de commits relacionados a um determinado escopo.</p>
+<p><strong>scope:</strong> (Opcional) Escopo da alteração (ex: api, modelo, auth).</p>
 </li>
 <li>
-<p><strong>description:</strong> Aqui deve-se trazer a descrição da alteração que foi feita. Essa descrição deve ser feita sucintamente, buscando ser direto ao ponto e explicar bem o que foi feito. Evitar descrições muito vagas, onde não se tem ideia do que foi feito. Também podemos adicionar aqui o link da tarefa do ClickUp referente ao commit.</p>
+<p><strong>description:</strong> Descrição curta e objetiva do que foi feito.</p>
 </li>
 </ul>
-<h3 id="exemplos">Exemplos:<a class="headerlink" href="#exemplos" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>💡 <strong>Dica</strong>: Utilize o <strong>AI Docs</strong> para gerar mensagens de commit claras e padronizadas a partir das suas alterações.</p>
+</blockquote>
+<p>Lembre-se: Seu commit é uma conversa com o futuro. <strong>Com você mesmo daqui a 6 meses e com seus colegas que nunca viram esse código.</strong> Uma mensagem ambígua é como dar direções sem pontos de referência.</p>
+<h4 id="exemplos">Exemplos:<a class="headerlink" href="#exemplos" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><strong>Bons:</strong> ✅</p>
@@ -1028,125 +1103,253 @@
 </ul>
 </li>
 <li>
-<p><strong>Ruins:</strong> ❌</p>
+<p><strong>Ruins (Exemplos reais):</strong> ❌</p>
 <ul>
 <li>
-<p><code>agora vai!</code></p>
+<p><code>add api deploy</code></p>
 </li>
 <li>
-<p><code>&lt;vazio&gt;</code></p>
+<p><code>Mudança nos modelos e inserção documentação</code></p>
 </li>
 <li>
-<p><code>correção de um erro</code></p>
+<p><code>improve notebook</code></p>
 </li>
 <li>
-<p><code>commit 2</code></p>
+<p><code>Documentacao tecninca do projeto</code></p>
+</li>
+<li>
+<p><code>quickfixes</code></p>
+</li>
+<li>
+<p><code>ajustando</code></p>
+</li>
+<li>
+<p><code>fix_trial</code></p>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="trabalhando-com-branches">Trabalhando com Branches<a class="headerlink" href="#trabalhando-com-branches" title="Permanent link">&para;</a></h2>
-<p>Branches são uma parte fundamental do Git, permitindo que você trabalhe em diferentes versões do seu código ao mesmo tempo. Eles são úteis para isolar o trabalho em progresso, testar novas funcionalidades e colaborar com outros desenvolvedores.</p>
-<p>Beleza, todos os repositórios possuem branches, mas quando eu devo abrir uma branch ou como eu devo abrir uma branch?</p>
+<h2 id="trabalhando-com-branches"><strong>Trabalhando com Branches</strong><a class="headerlink" href="#trabalhando-com-branches" title="Permanent link">&para;</a></h2>
+<p>Nossa estrutura de branches é desenhada para garantir estabilidade e organização.</p>
+<h3 id="nomenclatura-padrao">Nomenclatura Padrão<a class="headerlink" href="#nomenclatura-padrao" title="Permanent link">&para;</a></h3>
+<p>Utilizamos os seguintes prefixos para nomear as branches:</p>
+<ul>
+<li>
+<p><strong><code>feature/&lt;nome-da-tarefa&gt;</code>:</strong> Para novas funcionalidades.</p>
+</li>
+<li>
+<p><strong><code>fix/&lt;nome-da-tarefa&gt;</code>:</strong> Para correção de bugs.</p>
+</li>
+</ul>
+<p>O nome deve ser claro, conciso e, se possível, relacionado à tarefa no ClickUp (ex: <code>feature/jwt-auth-api</code>).</p>
+<h3 id="papel-das-branchs-principais">Papel das Branchs principais<a class="headerlink" href="#papel-das-branchs-principais" title="Permanent link">&para;</a></h3>
+<p>Todo repositório terá, por padrão, as seguintes branches principais:</p>
+<ul>
+<li>
+<p><strong><code>main</code>:</strong> É a nossa branch principal, estável e que reflete o código em produção. Ela é protegida e não deve receber commits diretos. Todo código que chega nela já foi testado e validado, além de chegar somente por meio de PRs da <code>develop</code>.</p>
+</li>
+<li>
+<p><strong><code>develop</code>:</strong> É a branch de integração e desenvolvimento. Todo novo trabalho (features e fixes) deve ser mergeado nela primeiro. Ela representa o estado mais atual do que estará no próximo lançamento.</p>
+</li>
+</ul>
+<h2 id="pull-requests-prs-e-revisao-de-codigo"><strong>Pull Requests (PRs) e Revisão de Código</strong><a class="headerlink" href="#pull-requests-prs-e-revisao-de-codigo" title="Permanent link">&para;</a></h2>
+<h3 id="os-prs">Os PRs<a class="headerlink" href="#os-prs" title="Permanent link">&para;</a></h3>
+<p>Se os seus commits são a história do seu trabalho, o Pull Request (PR) é o momento em que você convida outros para lerem, contribuírem e validarem essa história. É o coração do nosso processo colaborativo, onde a qualidade é forjada em conjunto.</p>
+<h4 id="preparando-o-pr-o-titulo-e-o-template">Preparando o PR: o título e o template<a class="headerlink" href="#preparando-o-pr-o-titulo-e-o-template" title="Permanent link">&para;</a></h4>
+<p>Antes de chamar os revisores, precisamos arrumar a casa. Um PR bem-estruturado acelera a revisão e melhora a comunicação.</p>
+<ul>
+<li>
+<p><strong>O Título é a parte fundamental:</strong></p>
+<ul>
+<li>O formato <code>Título descritivo do PR (#ID_DA_TASK_NO_CLICKUP)</code> <strong>não é burocracia, é um GPS.</strong> Ele conecta instantaneamente seu código a uma tarefa no ClickUp, dando contexto a todos sobre o porquê daquela alteração existir.</li>
+</ul>
+</li>
+<li>
+<p><strong>O Template é a história:</strong></p>
+<ul>
+<li>
+<p>Pense no template do PR como uma história para uma boa conversa. Preenchê-lo corretamente <strong>garante que ninguém perca tempo</strong> tentando adivinhar o que está acontecendo.</p>
+<ul>
+<li>
+<p><strong>Contexto:</strong> Descreva o problema ou a necessidade que motivou o seu trabalho.</p>
+</li>
+<li>
+<p><strong>Alterações Realizadas:</strong> Liste de forma clara e objetiva as principais mudanças que você implementou.</p>
+</li>
+<li>
+<p><strong>Itens Relacionados:</strong> Adicione o link para a tarefa no ClickUp e qualquer outra documentação que ajude a entender o cenário completo.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>O PR deve sempre seguir a estrutura abaixo:</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># Título descritivo do PR (#ID_DA_TASK_NO_CLICKUP)</span>
+
+<span class="gu">## Contexto</span>
+
+Descreva o problema ou a necessidade que motivou o seu trabalho.
+
+<span class="gu">## Alterações Realizadas</span>
+
+Liste de forma clara e objetiva as principais mudanças que você implementou.
+
+<span class="gu">## Itens Relacionados</span>
+
+Adicione o link para a tarefa no ClickUp e qualquer outra documentação que ajude a entender o cenário completo.
+</code></pre></div>
+
 <blockquote>
-<p>Sempre que você for trabalhar em uma nova funcionalidade, correção de bug ou qualquer outra tarefa, você deve abrir uma branch para isso. Isso ajuda a manter o código organizado e facilita a revisão de código.</p>
+<p>⚠️ <strong>Fique ligado:</strong> os PRs deve ser sucintos e focados em <strong>uma única tarefa</strong>, PRs muitos grandes podem ser demorados para serem revisados</p>
+<p>📒 <strong>Conteúdos extras:</strong> <a href="https://hugooodias.medium.com/the-anatomy-of-a-perfect-pull-request-567382bb6067">The anatomy of a perfect pull request | by Hugo Dias</a></p>
 </blockquote>
-<p>Nos repositórios do projeto, temos algumas convenções para nomear as branches:</p>
-<ul>
-<li><strong><code>main</code></strong> ou <strong><code>master</code>:</strong> Versão estável, pronta para produção.</li>
-<li><strong><code>develop</code>:</strong> Branch principal para desenvolvimento.</li>
-<li><strong><code>feature/&lt;nome&gt;</code>:</strong> Para novas funcionalidades.</li>
-<li><strong><code>hotfix/&lt;nome&gt;</code>:</strong> Correções críticas em produção.</li>
-<li><strong><code>bugfix/&lt;nome&gt;</code>:</strong> Correção de bugs detectados no ambiente de testes.</li>
-</ul>
-<p>Exemplos:</p>
-<ul>
-<li><code>feature/melhorias-performance</code></li>
-<li><code>hotfix/corrige-login</code></li>
-<li><code>bugfix/ajuste-tamanho-imagem</code></li>
-</ul>
-<h2 id="merges-e-pull-requests">Merges e Pull Requests<a class="headerlink" href="#merges-e-pull-requests" title="Permanent link">&para;</a></h2>
-<p>Quando você terminar de trabalhar em uma branch, você deve criar um Pull Request (PR) para mesclar suas alterações de volta para a branch principal. Isso permite que outros desenvolvedores revisem seu código e forneçam feedback antes de mesclar as alterações.</p>
-<p>Para garantir que nosso PR seja revisado e mesclado com sucesso, devemos seguir algumas boas práticas:</p>
+<h3 id="reviews">Reviews<a class="headerlink" href="#reviews" title="Permanent link">&para;</a></h3>
+<p>A revisão de código não é um teste, é um diálogo. É a chance de aprender, ensinar e, principalmente, <strong>garantir que estamos entregando o nosso melhor.</strong></p>
+<p>Para guiar essa conversa, o revisor se baseia em <strong>3 Pilares de Qualidade:</strong></p>
 <ul>
 <li>
-<p><strong>Tamanho dos PRs:</strong> os PRs deve ser sucintos e diretos ao ponto, PRs muitos grandes podem ser demorados para serem revisados</p>
+<p><strong>Rastreabilidade:</strong> O PR está corretamente conectado a uma tarefa do ClickUp?</p>
 </li>
 <li>
-<p><strong>Título e Descrição:</strong> um PR bem descrito e detalhado leva a um review mais objetivo e rápido. Busque sempre elaborar um título auto explicativo que descreva o que o PR faz. <strong>Na descrição, sempre detalhe o que foi alterado, por que foi alterado e como foi alterado.</strong></p>
-<ul>
-<li>
-<p>Use prints, se necessário, para detalhar as modificações.</p>
+<p><strong>Propósito:</strong> As alterações cumprem os requisitos (o DoD) da tarefa?</p>
 </li>
 <li>
-<p>Aqui devemos também sempre adicionar o card do ClickUp, quando possível referenciar, para conseguirmos linkar a tarefa relacionada com a entrega.</p>
+<p><strong>Funcionalidade:</strong> O código foi testado? Ele funciona como deveria? (⚠️ Lembre-se: <strong>ler é diferente de executar!</strong>)</p>
 </li>
 </ul>
-</li>
-<li>
-<p><strong>Os PRs sempre devem ser feitos para uma branch abaixo da main/master, como a develop, homolog ou outra branch de testes antes de subir para a main/master</strong></p>
-</li>
-<li>
-<p>Sempre que abrirmos um PR devemos avisar, no Slack, o Project Lead e o Tech Lead do projeto, bem como os revisores responsáveis. De preferência, mande no canal do projeto.</p>
-</li>
-<li>
-<p>Fique ligado:</p>
-<ul>
-<li><a href="https://hugooodias.medium.com/the-anatomy-of-a-perfect-pull-request-567382bb6067">The anatomy of a perfect pull request | by Hugo Dias</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="reviews">Reviews<a class="headerlink" href="#reviews" title="Permanent link">&para;</a></h2>
-<p>A arte de revisar é importante, todo PR deve ser revisado antes de ser mesclado na branch destino. Desta forma, devemos sempre marcar alguém como revisor. No contexto dos projetos, sempre que tivermos a figura do Tech Lead, ele deve ser a pessoa que irá revisar, ou, em caso de dúvida, sempre pergunte ao PL, ele saberá indicar quem deverá ser marcado como revisor. </p>
 <blockquote>
-<p>Caso não exista alguém para revisar no momento, isso deve ser apontado no PR! Trazendo como comentário ou ponto adicional para deixar claro que não existia alguém para revisar no momento.</p>
+<p>⚠️ <strong>A Regra de Ouro da Entrega:</strong> O trabalho só está verdadeiramente "concluído" quando o código passa por esse processo. Por isso, <strong>uma tarefa no ClickUp só pode ser finalizada depois que o PR associado a ela for aprovado e integrado na branch develop.</strong></p>
+<p>📒 <strong>Conteúdos extras:</strong> <a href="https://github.com/thoughtbot/guides/tree/main/code-review">Code Review</a></p>
 </blockquote>
-<p>📒 Fique ligado: <a href="https://github.com/thoughtbot/guides/tree/main/code-review">Code Review</a></p>
 <p>Assim que o revisor fizer a revisão, teremos três caminhos possíveis:</p>
 <ul>
 <li>
-<p><strong>PR Aprovado ✅:</strong> pode-se seguir o fluxo e realizar o merge na branch principal, fechando, dessa forma, o PR. Sendo feito o merge, devemos avisar no Slack que o merge foi feito e as alterações já foram realizadas. Se você for o revisor, sempre avise que aprovou o PR no canal do Slack.</p>
+<p><strong>PR Aprovado ✅:</strong> O PR pode ser mergeado na branch destino. Avise no Slack sobre a aprovação e o merge.</p>
 </li>
 <li>
-<p><strong>Alterações Solicitadas 🚧:</strong> o revisor detectou que existem alterações a serem realizadas, dessa forma devemos ver os comentários deixados pelo revisor no PR (se você for o revisor, sempre avise que solicitou alterações no canal do Slack). Após realizar as alterações, devemos solicitar ao revisor que olhe se está tudo ok, ele dando o aceite, podemos seguir para o merge e o processo corre como no tópico anterior.</p>
+<p><strong>Alterações Solicitadas 🚧:</strong> O revisor solicitou mudanças. Verifique os comentários, realize os ajustes e peça uma nova revisão. Avise no Slack sobre a solicitação de alterações e quaisquer dúvidas sobre as mudanças.</p>
 </li>
 <li>
-<p><strong>PR Reprovado ❌:</strong> Neste caso o seu PR, por algum motivo que deve ser esclarecido pelo revisor, foi reprovado. Caso você seja o revisor, sempre comunique o motivo que levou a ser recusado e o que deve-se ser feito para os próximos passos.</p>
+<p><strong>PR Reprovado ❌:</strong> O PR foi reprovado. O revisor deve comunicar claramente o motivo e os próximos passos.</p>
 </li>
 </ul>
-<h2 id="boas-praticas-com-git">Boas Práticas com Git<a class="headerlink" href="#boas-praticas-com-git" title="Permanent link">&para;</a></h2>
-<h3 id="1-commits-frequentes-e-pequenos">1. <strong>Commits Frequentes e Pequenos</strong><a class="headerlink" href="#1-commits-frequentes-e-pequenos" title="Permanent link">&para;</a></h3>
-<p>Realize commits com frequência para evitar perda de trabalho e facilitar revisões.</p>
-<h3 id="2-evite-commits-ambiguos">2. <strong>Evite Commits Ambíguos</strong><a class="headerlink" href="#2-evite-commits-ambiguos" title="Permanent link">&para;</a></h3>
-<p>Sempre use mensagens descritivas e específicas. Evite commits como "agora vai" ou "pequenos ajustes".</p>
-<h3 id="3-resolvendo-conflitos">3. <strong>Resolvendo Conflitos</strong><a class="headerlink" href="#3-resolvendo-conflitos" title="Permanent link">&para;</a></h3>
-<p>Conflitos podem surgir ao trabalhar em equipes. Resolva-os seguindo este fluxo:</p>
+<h2 id="gitflow-da-cognitivo">GitFlow da Cognitivo<a class="headerlink" href="#gitflow-da-cognitivo" title="Permanent link">&para;</a></h2>
+<p>Agora que entendemos as peças, vamos ver como elas se movem juntas. Nosso fluxo de trabalho busca sempre garantir que tenhamos um ritmo que garante agilidade e segurança, além de garantir a previsibilidade das entregas.</p>
 <ul>
-<li>Identifique os arquivos em conflito:</li>
+<li><strong>Passo 1:</strong> O Ponto de Partida (<code>develop</code>)</li>
 </ul>
+<p>Tudo começa na <code>develop</code>. Pense nela como a nossa oficina principal. Antes de começar a martelar, garanta que você tem a planta mais recente do projeto.</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>develop
+git<span class="w"> </span>pull
+</code></pre></div>
+
+<ul>
+<li><strong>Passo 2:</strong> Sua Bancada de Trabalho (<code>feature/</code> ou <code>fix/</code>)</li>
+</ul>
+<p>Agora, crie seu espaço. Sua branch é sua bancada de trabalho, isolada e segura para você construir sem interferir no trabalho dos outros.</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/minha-nova-feature
+</code></pre></div>
+
+<ul>
+<li><strong>Passo 3:</strong> A Construção (Commits Constantes)</li>
+</ul>
+<p>Aqui entra a nossa filosofia: <strong>"commits pequenos e constantes"</strong>. Cada commit é um tijolo bem assentado na sua construção. <strong>Não espere a parede inteira ficar pronta para registrar o progresso.</strong> Isso cria um histórico limpo e facilita a vida de todos.</p>
+<blockquote>
+<p>💡 <strong>Dica:</strong> Todo fim do dia, faça um commit do que você trabalhou. Isso ajuda a manter o histórico atualizado e reduz a chance de conflitos.</p>
+</blockquote>
+<p>Utilize sempre o <strong>AI Docs</strong> para ajudá-lo em suas mensagens e commits.</p>
+<ul>
+<li><strong>Passo 4:</strong> O Convite para a Revisão (O PR para <code>develop</code>)</li>
+</ul>
+<p>Terminou sua parte? Ótimo. Agora é hora de chamar o mestre de obras para validar. Seu Pull Request para a <code>develop</code> é esse convite. <strong>Preencha o template, explique sua obra e chame os revisores.</strong></p>
+<ul>
+<li><strong>Passo 5:</strong> A Integração (merge na <code>develop</code>)</li>
+</ul>
+<p>Com o feedback aplicado e o "ok" do revisor, seu trabalho se junta ao dos outros na oficina. A <code>develop</code> agora contém a sua contribuição, pronta para ser testada em conjunto com as outras novidades.</p>
+<ul>
+<li><strong>Passo 6:</strong> O Lançamento (merge na <code>main</code>)</li>
+</ul>
+<p>Este é o grande momento, gerenciado pelo Tech Lead. Quando um conjunto de funcionalidades na <code>develop</code> está sólido e validado, ele é promovido para a <code>main</code>. É como inaugurar o prédio. O código agora está em produção, servindo aos nossos clientes.</p>
+<h3 id="checklist-diario">✅ Checklist Diário<a class="headerlink" href="#checklist-diario" title="Permanent link">&para;</a></h3>
+<p>Lembre-se sempre do checklist cotidiano:</p>
+<div class="admonition note">
+<p class="admonition-title">Checklist Diário</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 📅 <strong>Always sync:</strong> <code>git pull origin develop</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 🌱 <strong>Branch naming:</strong> <code>feature/</code> ou <code>fix/</code> + nome descritivo  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 📝 <strong>Commit format:</strong> <code>tipo(escopo): descrição</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 🔄 <strong>PR template:</strong> Preenchido completamente</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 👤 <strong>ClickUp link:</strong> Conectado no PR</li>
+</ul>
+</div>
+<h2 id="boas-praticas-o-jeito-cognitivo-de-usar-git"><strong>Boas Práticas: O Jeito Cognitivo de Usar Git</strong><a class="headerlink" href="#boas-praticas-o-jeito-cognitivo-de-usar-git" title="Permanent link">&para;</a></h2>
+<p>Agora que você domina o fluxo, vamos falar sobre as práticas que <strong>separam o profissional do amador</strong>. Essas não são apenas recomendações; são os hábitos que tornam o nosso trabalho previsível, confiável e, acima de tudo, colaborativo.</p>
+<p><strong>1. O Ritmo da Construção: Commits Pequenos e Constantes</strong></p>
+<p>Pense nos commits como fotografias do progresso da sua obra. <strong>Você não tira uma foto apenas quando a casa está pronta</strong>, certo? Cada etapa importante merece ser registrada.</p>
+<p><strong>Por que isso importa?</strong></p>
+<ul>
+<li>
+<p><strong>Segurança:</strong> Você nunca perde mais do que algumas horas de trabalho.</p>
+</li>
+<li>
+<p><strong>Clareza:</strong> É mais fácil entender o que mudou entre duas fotos próximas.</p>
+</li>
+<li>
+<p><strong>Colaboração:</strong> Conflitos são menores e mais fáceis de resolver.</p>
+</li>
+</ul>
+<p><strong>Na prática:</strong></p>
+<ul>
+<li>
+<p>Terminou uma função? Commit.</p>
+</li>
+<li>
+<p>Corrigiu um bug específico? Commit.</p>
+</li>
+<li>
+<p>Adicionou um teste? Commit.</p>
+</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Regra de ouro:</strong> Se você consegue explicar o commit em uma frase clara, ele tem o tamanho certo.</p>
+</blockquote>
+<p><strong>2. Conflitos: Quando Duas Histórias se Encontram</strong></p>
+<p>Conflitos não são problemas; <strong>são conversas entre diferentes linhas de pensamento.</strong> Quando o Git não consegue decidir qual versão manter, ele está pedindo para você ser o mediador dessa conversa.</p>
+<p><strong>O processo de resolução:</strong></p>
+<p><strong>Passo 1:</strong> Entenda o cenário</p>
 <div class="codehilite"><pre><span></span><code>git<span class="w"> </span>status
 </code></pre></div>
 
-<ul>
-<li>
-<p>Abra os arquivos em conflito e resolva as diferenças manualmente.</p>
-</li>
-<li>
-<p>Adicione os arquivos resolvidos:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>&lt;arquivo&gt;
+<p><strong>Passo 2:</strong> Abra os arquivos em conflito e seja o tradutor
+- Analise as duas versões
+- Entenda o que cada desenvolvedor estava tentando fazer
+- Combine o melhor dos dois mundos (ou escolha a versão mais adequada)</p>
+<p><strong>Passo 3:</strong> Finalize a conversa</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>&lt;arquivo-resolvido&gt;
+git<span class="w"> </span>merge<span class="w"> </span>--continue
 </code></pre></div>
 
-<ul>
-<li>Continue com o merge:</li>
-</ul>
-<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--continue
+<blockquote>
+<p>⚠️ <strong>Atenção:</strong> Sempre teste o código após resolver conflitos. <strong>Duas funcionalidades que funcionam separadamente podem não funcionar juntas.</strong></p>
+</blockquote>
+<p><strong>3. O Hábito da Atualização</strong></p>
+<p><strong>Começar o dia sincronizado é como alinhar os ponteiros do relógio.</strong> Evita que você trabalhe em uma versão desatualizada e reduza conflitos desnecessários.</p>
+<p><strong>Ritual diário:</strong></p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>develop
+git<span class="w"> </span>pull<span class="w">                     </span><span class="c1"># Sincroniza com o servidor</span>
+git<span class="w"> </span>checkout<span class="w"> </span>feature/minha-branch
+git<span class="w"> </span>merge<span class="w"> </span>develop<span class="w">            </span><span class="c1"># Traz as novidades para sua branch</span>
 </code></pre></div>
 
-<h3 id="4-automatizacao">4. <strong>Automatização</strong><a class="headerlink" href="#4-automatizacao" title="Permanent link">&para;</a></h3>
-<p>Use ferramentas como <code>pre-commit hooks</code> para automatizar validações, como linting e formatação.</p>
-<h2 id="comandos-uteis-do-git">Comandos Úteis do Git<a class="headerlink" href="#comandos-uteis-do-git" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>🎯 <strong>Dica:</strong> Faça isso <strong>antes</strong> de começar a codificar e <strong>sempre</strong> que voltar de uma pausa longa.</p>
+</blockquote>
+<p>Essas práticas não são burocracias. <strong>São os fundamentos que nos permitem trabalhar como uma orquestra</strong>, onde cada músico sabe exatamente quando e como tocar sua parte.</p>
+<h2 id="referencia-rapida-comandos-essenciais-do-git"><strong>Referência Rápida: Comandos Essenciais do Git</strong><a class="headerlink" href="#referencia-rapida-comandos-essenciais-do-git" title="Permanent link">&para;</a></h2>
+<p>Esta seção é o seu "canivete suíço" para o dia a dia. São os comandos que sustentam nosso fluxo de trabalho e te ajudam a manter o ritmo sem perder o controle.</p>
+<p><strong>1. Rotina Diária (O Básico para o Dia a Dia)</strong></p>
+<p>Comandos para o ciclo de trabalho principal: criar, salvar e sincronizar.</p>
 <table>
 <thead>
 <tr>
@@ -1157,27 +1360,111 @@
 <tbody>
 <tr>
 <td><code>git status</code></td>
-<td>Verifica o estado atual do repositório.</td>
+<td>Mostra o status das suas alterações: o que foi modificado, o que está pronto para commit e o que não está sendo rastreado. <strong>Use antes de qualquer <code>commit</code> para ter certeza do que está enviando.</strong></td>
 </tr>
 <tr>
+<td><code>git add .</code></td>
+<td>Prepara <strong>todas</strong> as alterações nos arquivos modificados para serem incluídas no próximo commit.</td>
+</tr>
+<tr>
+<td><code>git add &lt;arquivo&gt;</code></td>
+<td>Prepara um arquivo específico para o próximo commit. Ideal para criar commits pequenos e lógicos.</td>
+</tr>
+<tr>
+<td><code>git commit -m "feat: msg"</code></td>
+<td>Cria um "snapshot" (uma foto) das suas alterações preparadas, com uma mensagem semântica. <strong>É o Passo 3 do nosso GitFlow.</strong></td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>Busca as atualizações do repositório remoto e as mescla na sua branch atual. <strong>Use no Passo 1 do nosso GitFlow, na branch <code>develop</code>.</strong></td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>Envia seus commits locais para o repositório remoto, tornando-os visíveis para a equipe.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Analisando o Passado (Inspecionando o Histórico)</strong></p>
+<p>Comandos para entender o que já foi feito e o que você está prestes a fazer.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td><code>git log</code></td>
-<td>Exibe o histórico de commits.</td>
+<td>Exibe o histórico de commits da branch, mostrando autor, data e mensagem de cada um.</td>
+</tr>
+<tr>
+<td><code>git log --oneline --graph</code></td>
+<td>Mostra o histórico de forma compacta e visual, com uma linha por commit e um gráfico das ramificações (branches). <strong>Muito útil para entender a linha do tempo.</strong></td>
 </tr>
 <tr>
 <td><code>git diff</code></td>
-<td>Mostra diferenças entre versões.</td>
+<td>Mostra as diferenças detalhadas entre o que você modificou e o último commit. <strong>Use para revisar suas próprias alterações antes de um <code>git add</code>.</strong></td>
 </tr>
+<tr>
+<td><code>git diff --staged</code></td>
+<td>Mostra as diferenças do que já foi preparado (<code>staged</code>) com <code>git add</code> em relação ao último commit.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Navegando e Criando (Trabalhando com Branches)</strong></p>
+<p>Comandos para gerenciar suas linhas de trabalho.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git branch</code></td>
+<td>Lista todas as branches locais e indica em qual você está.</td>
+</tr>
+<tr>
+<td><code>git checkout &lt;nome-da-branch&gt;</code></td>
+<td>Muda para uma branch já existente.</td>
+</tr>
+<tr>
+<td><code>git checkout -b feature/nome</code></td>
+<td>Cria uma nova branch a partir da atual e já muda para ela. <strong>É o Passo 2 do nosso GitFlow.</strong></td>
+</tr>
+<tr>
+<td><code>git merge develop</code></td>
+<td>Traz as atualizações da branch <code>develop</code> para a sua branch atual. <strong>Essencial para manter seu trabalho sincronizado.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Corrigindo o Percurso (Desfazendo e Salvando Alterações)</strong></p>
+<p>Comandos para situações inesperadas. Use com atenção!</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>git stash</code></td>
-<td>Salva mudanças temporariamente.</td>
+<td>Guarda suas alterações não commitadas "na gaveta" temporariamente, limpando sua área de trabalho. Útil quando você precisa mudar de branch rapidamente sem commitar.</td>
 </tr>
 <tr>
-<td><code>git reset --hard &lt;commit&gt;</code></td>
-<td>Restaura o repositório para um commit específico.</td>
+<td><code>git stash pop</code></td>
+<td>Traz de volta as últimas alterações que você guardou com <code>git stash</code>.</td>
 </tr>
 <tr>
-<td><code>git rebase -i &lt;branch&gt;</code></td>
-<td>Reorganiza commits para uma branch.</td>
+<td><code>git restore &lt;arquivo&gt;</code></td>
+<td>⚠️ <strong>Cuidado!</strong> Descarta as alterações em um arquivo que <strong>ainda não foi preparado</strong> (<code>staged</code>), restaurando-o para a versão do último commit.</td>
+</tr>
+<tr>
+<td><code>git reset --hard HEAD~1</code></td>
+<td>☠️ <strong>MUITO CUIDADO!</strong> Apaga completamente o último commit local. <strong>Use apenas se tiver certeza absoluta e NUNCA se o commit já foi enviado com <code>git push</code>.</strong></td>
 </tr>
 </tbody>
 </table>
