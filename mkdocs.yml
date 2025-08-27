@@ -12,13 +12,13 @@ theme:
   features:
     - navigation.tabs
 
-  locale: pt_br
+  locale: pt_BR
 
 nav:
   - Home: "index.md"
   - Geral:
     - Vamos ao Código 👨🏼‍💻: "global/code.md"
-    - O git 😁: "global/git.md"
+    - O git 🌳: "global/git.md"
     - Documentações 📝: "global/documentation.md"
     - Repositórios 📂: "global/repositories.md"
 
@@ -36,6 +36,8 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
   footer: "© 2025 Cognitivo.ai. All rights reserved."
