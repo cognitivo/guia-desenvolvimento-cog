@@ -1,4 +1,4 @@
-# O git 😁
+# O git 🌳
 
 ## **Por que o Git existe?**
 
@@ -54,16 +54,21 @@ Lembre-se: Seu commit é uma conversa com o futuro. **Com você mesmo daqui a 6 
 
     - `style: aplicação de formatador de código black`
 
-- **Ruins:** ❌
+- **Ruins (Exemplos reais):** ❌
 
-    - `agora vai!`
+    - `add api deploy`
 
-    - `<vazio>`
+    - `Mudança nos modelos e inserção documentação`
 
-    - `correção de um erro`
+    - `improve notebook`
 
-    - `commit 2`
+    - `Documentacao tecninca do projeto`
 
+    - `quickfixes`
+
+    - `ajustando`
+
+    - `fix_trial`
 
 ## **Trabalhando com Branches**
 
@@ -207,7 +212,7 @@ Este é o grande momento, gerenciado pelo Tech Lead. Quando um conjunto de funci
 
 Agora que você domina o fluxo, vamos falar sobre as práticas que **separam o profissional do amador**. Essas não são apenas recomendações; são os hábitos que tornam o nosso trabalho previsível, confiável e, acima de tudo, colaborativo.
 
-### **1. O Ritmo da Construção: Commits Pequenos e Constantes**
+**1. O Ritmo da Construção: Commits Pequenos e Constantes**
 
 Pense nos commits como fotografias do progresso da sua obra. **Você não tira uma foto apenas quando a casa está pronta**, certo? Cada etapa importante merece ser registrada.
 
@@ -229,7 +234,7 @@ Pense nos commits como fotografias do progresso da sua obra. **Você não tira u
 
 > 💡 **Regra de ouro:** Se você consegue explicar o commit em uma frase clara, ele tem o tamanho certo.
 
-### **2. Conflitos: Quando Duas Histórias se Encontram**
+**2. Conflitos: Quando Duas Histórias se Encontram**
 
 Conflitos não são problemas; **são conversas entre diferentes linhas de pensamento.** Quando o Git não consegue decidir qual versão manter, ele está pedindo para você ser o mediador dessa conversa.
 
@@ -253,7 +258,7 @@ git merge --continue
 
 > ⚠️ **Atenção:** Sempre teste o código após resolver conflitos. **Duas funcionalidades que funcionam separadamente podem não funcionar juntas.**
 
-### **3. O Hábito da Atualização**
+**3. O Hábito da Atualização**
 
 **Começar o dia sincronizado é como alinhar os ponteiros do relógio.** Evita que você trabalhe em uma versão desatualizada e reduza conflitos desnecessários.
 
@@ -268,3 +273,53 @@ git merge develop            # Traz as novidades para sua branch
 > 🎯 **Dica:** Faça isso **antes** de começar a codificar e **sempre** que voltar de uma pausa longa.
 
 Essas práticas não são burocracias. **São os fundamentos que nos permitem trabalhar como uma orquestra**, onde cada músico sabe exatamente quando e como tocar sua parte.
+
+## **Referência Rápida: Comandos Essenciais do Git**
+
+Esta seção é o seu "canivete suíço" para o dia a dia. São os comandos que sustentam nosso fluxo de trabalho e te ajudam a manter o ritmo sem perder o controle.
+
+**1. Rotina Diária (O Básico para o Dia a Dia)**
+
+Comandos para o ciclo de trabalho principal: criar, salvar e sincronizar.
+
+| Comando | Descrição |
+|---|---|
+| `git status` | Mostra o status das suas alterações: o que foi modificado, o que está pronto para commit e o que não está sendo rastreado. **Use antes de qualquer `commit` para ter certeza do que está enviando.** |
+| `git add .` | Prepara **todas** as alterações nos arquivos modificados para serem incluídas no próximo commit. |
+| `git add <arquivo>` | Prepara um arquivo específico para o próximo commit. Ideal para criar commits pequenos e lógicos. |
+| `git commit -m "feat: msg"` | Cria um "snapshot" (uma foto) das suas alterações preparadas, com uma mensagem semântica. **É o Passo 3 do nosso GitFlow.** |
+| `git pull` | Busca as atualizações do repositório remoto e as mescla na sua branch atual. **Use no Passo 1 do nosso GitFlow, na branch `develop`.** |
+| `git push` | Envia seus commits locais para o repositório remoto, tornando-os visíveis para a equipe. |
+
+**2. Analisando o Passado (Inspecionando o Histórico)**
+
+Comandos para entender o que já foi feito e o que você está prestes a fazer.
+
+| Comando | Descrição |
+|---|---|
+| `git log` | Exibe o histórico de commits da branch, mostrando autor, data e mensagem de cada um. |
+| `git log --oneline --graph` | Mostra o histórico de forma compacta e visual, com uma linha por commit e um gráfico das ramificações (branches). **Muito útil para entender a linha do tempo.** |
+| `git diff` | Mostra as diferenças detalhadas entre o que você modificou e o último commit. **Use para revisar suas próprias alterações antes de um `git add`.** |
+| `git diff --staged` | Mostra as diferenças do que já foi preparado (`staged`) com `git add` em relação ao último commit. |
+
+**3. Navegando e Criando (Trabalhando com Branches)**
+
+Comandos para gerenciar suas linhas de trabalho.
+
+| Comando | Descrição |
+|---|---|
+| `git branch` | Lista todas as branches locais e indica em qual você está. |
+| `git checkout <nome-da-branch>` | Muda para uma branch já existente. |
+| `git checkout -b feature/nome` | Cria uma nova branch a partir da atual e já muda para ela. **É o Passo 2 do nosso GitFlow.** |
+| `git merge develop` | Traz as atualizações da branch `develop` para a sua branch atual. **Essencial para manter seu trabalho sincronizado.** |
+
+**4. Corrigindo o Percurso (Desfazendo e Salvando Alterações)**
+
+Comandos para situações inesperadas. Use com atenção!
+
+| Comando | Descrição |
+|---|---|
+| `git stash` | Guarda suas alterações não commitadas "na gaveta" temporariamente, limpando sua área de trabalho. Útil quando você precisa mudar de branch rapidamente sem commitar. |
+| `git stash pop` | Traz de volta as últimas alterações que você guardou com `git stash`. |
+| `git restore <arquivo>` | ⚠️ **Cuidado!** Descarta as alterações em um arquivo que **ainda não foi preparado** (`staged`), restaurando-o para a versão do último commit. |
+| `git reset --hard HEAD~1` | ☠️ **MUITO CUIDADO!** Apaga completamente o último commit local. **Use apenas se tiver certeza absoluta e NUNCA se o commit já foi enviado com `git push`.** |
